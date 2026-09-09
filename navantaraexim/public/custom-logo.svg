@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="goldTree" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8C6826" />
+      <stop offset="35%" stop-color="#C5A059" />
+      <stop offset="70%" stop-color="#DFC17B" />
+      <stop offset="100%" stop-color="#F7E7B4" />
+    </linearGradient>
+
+    <linearGradient id="growthArrow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <linearGradient id="stampBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FAF7EE" />
+      <stop offset="100%" stop-color="#F3ECE0" />
+    </linearGradient>
+
+    <filter id="postageShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Airmail Chevron Pattern -->
+    <pattern id="airmailBorder" width="32" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="16" height="16" fill="#C5221F"/>
+      <rect x="16" width="16" height="16" fill="#1A73E8"/>
+    </pattern>
+
+    <!-- Stamp Mask for Perforated Edge -->
+    <mask id="perforationMask">
+      <rect x="0" y="0" width="400" height="480" fill="#fff"/>
+      <!-- Top edge holes -->
+      <circle cx="25" cy="8" r="8" fill="#000"/><circle cx="50" cy="8" r="8" fill="#000"/><circle cx="75" cy="8" r="8" fill="#000"/>
+      <circle cx="100" cy="8" r="8" fill="#000"/><circle cx="125" cy="8" r="8" fill="#000"/><circle cx="150" cy="8" r="8" fill="#000"/>
+      <circle cx="175" cy="8" r="8" fill="#000"/><circle cx="200" cy="8" r="8" fill="#000"/><circle cx="225" cy="8" r="8" fill="#000"/>
+      <circle cx="250" cy="8" r="8" fill="#000"/><circle cx="275" cy="8" r="8" fill="#000"/><circle cx="300" cy="8" r="8" fill="#000"/>
+      <circle cx="325" cy="8" r="8" fill="#000"/><circle cx="350" cy="8" r="8" fill="#000"/><circle cx="375" cy="8" r="8" fill="#000"/>
+      <!-- Bottom edge holes -->
+      <circle cx="25" cy="472" r="8" fill="#000"/><circle cx="50" cy="472" r="8" fill="#000"/><circle cx="75" cy="472" r="8" fill="#000"/>
+      <circle cx="100" cy="472" r="8" fill="#000"/><circle cx="125" cy="472" r="8" fill="#000"/><circle cx="150" cy="472" r="8" fill="#000"/>
+      <circle cx="175" cy="472" r="8" fill="#000"/><circle cx="200" cy="472" r="8" fill="#000"/><circle cx="225" cy="472" r="8" fill="#000"/>
+      <circle cx="250" cy="472" r="8" fill="#000"/><circle cx="275" cy="472" r="8" fill="#000"/><circle cx="300" cy="472" r="8" fill="#000"/>
+      <circle cx="325" cy="472" r="8" fill="#000"/><circle cx="350" cy="472" r="8" fill="#000"/><circle cx="375" cy="472" r="8" fill="#000"/>
+      <!-- Left edge holes -->
+      <circle cx="8" cy="30" r="8" fill="#000"/><circle cx="8" cy="55" r="8" fill="#000"/><circle cx="8" cy="80" r="8" fill="#000"/>
+      <circle cx="8" cy="105" r="8" fill="#000"/><circle cx="8" cy="130" r="8" fill="#000"/><circle cx="8" cy="155" r="8" fill="#000"/>
+      <circle cx="8" cy="180" r="8" fill="#000"/><circle cx="8" cy="205" r="8" fill="#000"/><circle cx="8" cy="230" r="8" fill="#000"/>
+      <circle cx="8" cy="255" r="8" fill="#000"/><circle cx="8" cy="280" r="8" fill="#000"/><circle cx="8" cy="305" r="8" fill="#000"/>
+      <circle cx="8" cy="330" r="8" fill="#000"/><circle cx="8" cy="355" r="8" fill="#000"/><circle cx="8" cy="380" r="8" fill="#000"/>
+      <circle cx="8" cy="405" r="8" fill="#000"/><circle cx="8" cy="430" r="8" fill="#000"/><circle cx="8" cy="450" r="8" fill="#000"/>
+      <!-- Right edge holes -->
+      <circle cx="392" cy="30" r="8" fill="#000"/><circle cx="392" cy="55" r="8" fill="#000"/><circle cx="392" cy="80" r="8" fill="#000"/>
+      <circle cx="392" cy="105" r="8" fill="#000"/><circle cx="392" cy="130" r="8" fill="#000"/><circle cx="392" cy="155" r="8" fill="#000"/>
+      <circle cx="392" cy="180" r="8" fill="#000"/><circle cx="392" cy="205" r="8" fill="#000"/><circle cx="392" cy="230" r="8" fill="#000"/>
+      <circle cx="392" cy="255" r="8" fill="#000"/><circle cx="392" cy="280" r="8" fill="#000"/><circle cx="392" cy="305" r="8" fill="#000"/>
+      <circle cx="392" cy="330" r="8" fill="#000"/><circle cx="392" cy="355" r="8" fill="#000"/><circle cx="392" cy="380" r="8" fill="#000"/>
+      <circle cx="392" cy="405" r="8" fill="#000"/><circle cx="392" cy="430" r="8" fill="#000"/><circle cx="392" cy="450" r="8" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- Base Stamp Card with Perforated Edge -->
+  <g mask="url(#perforationMask)" filter="url(#postageShadow)">
+    <rect x="8" y="8" width="384" height="464" rx="3" fill="#FFFFFF" />
+    
+    <!-- Outer Airmail Red & Blue Diagonal Border Frame -->
+    <!-- Top Bar -->
+    <g transform="translate(16, 16)">
+      <!-- Alternating red & blue angled stripes -->
+      <svg width="368" height="12" viewBox="0 0 368 12">
+        <defs>
+          <pattern id="hStripes" width="24" height="12" patternUnits="userSpaceOnUse">
+            <polygon points="0,0 8,0 0,12" fill="#C5221F"/>
+            <polygon points="8,0 20,0 8,12 0,12" fill="#1A73E8"/>
+            <polygon points="20,0 24,0 12,12 8,12" fill="#FFFFFF"/>
+            <polygon points="24,0 24,12 20,12" fill="#C5221F"/>
+          </pattern>
+        </defs>
+        <rect width="368" height="12" fill="url(#hStripes)" />
+      </svg>
+    </g>
+
+    <!-- Bottom Bar -->
+    <g transform="translate(16, 452)">
+      <svg width="368" height="12" viewBox="0 0 368 12">
+        <rect width="368" height="12" fill="url(#hStripes)" />
+      </svg>
+    </g>
+
+    <!-- Left Bar -->
+    <g transform="translate(16, 28)">
+      <svg width="12" height="424" viewBox="0 0 12 424">
+        <defs>
+          <pattern id="vStripes" width="12" height="24" patternUnits="userSpaceOnUse">
+            <polygon points="0,0 12,12 12,24 0,12" fill="#C5221F"/>
+            <polygon points="0,12 12,24 0,24" fill="#1A73E8"/>
+          </pattern>
+        </defs>
+        <rect width="12" height="424" fill="url(#vStripes)" />
+      </svg>
+    </g>
+
+    <!-- Right Bar -->
+    <g transform="translate(372, 28)">
+      <svg width="12" height="424" viewBox="0 0 12 424">
+        <rect width="12" height="424" fill="url(#vStripes)" />
+      </svg>
+    </g>
+
+    <!-- Inner Cream Stamp Body -->
+    <rect x="28" y="28" width="344" height="424" fill="url(#stampBg)" stroke="#C5A059" stroke-width="1.5" />
+    <rect x="34" y="34" width="332" height="412" fill="none" stroke="#0B192C" stroke-width="0.8" stroke-dasharray="3,2" opacity="0.4"/>
+  </g>
+
+  <!-- Postal Postmark Franking Seal in Upper Right -->
+  <g transform="translate(290, 75)" opacity="0.65">
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#C5A059" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#C5A059" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <line x1="-38" y1="-8" x2="38" y2="-8" stroke="#C5A059" stroke-width="1"/>
+    <line x1="-38" y1="8" x2="38" y2="8" stroke="#C5A059" stroke-width="1"/>
+    <text x="0" y="-12" font-family="monospace" font-size="6.5" font-weight="bold" fill="#8C6826" text-anchor="middle">NAVANTARA</text>
+    <text x="0" y="4" font-family="monospace" font-size="6.5" font-weight="bold" fill="#8C6826" text-anchor="middle">AIR-CARGO</text>
+    <text x="0" y="18" font-family="monospace" font-size="6" fill="#8C6826" text-anchor="middle">EXPORT VERIFIED</text>
+  </g>
+
+  <!-- CENTRAL MOTIF: TREE OF LIFE / SPICE EXPORT TREE -->
+  <g id="treeOfLife" transform="translate(200, 215)">
+    <!-- Tree Trunk and Roots -->
+    <path d="M -8,90 Q -6,50 -12,20 Q -18,-10 -6,-35 Q -3,-42 0,-45 Q 3,-42 6,-35 Q 18,-10 12,20 Q 6,50 8,90 Z" fill="url(#goldTree)" />
+    <!-- Roots spreading into Indian Soil -->
+    <path d="M -8,85 Q -25,95 -45,100 M -4,88 Q -15,102 -25,108 M 8,85 Q 25,95 45,100 M 4,88 Q 15,102 25,108" stroke="url(#goldTree)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Left Main Branches & Botanical Foliage (Cardamom, Pepper, Spices) -->
+    <path d="M -8,10 Q -35,-5 -60,-15 Q -75,-25 -85,-45" stroke="url(#goldTree)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M -30,-2 Q -50,-25 -70,-35" stroke="url(#goldTree)" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M -10,-15 Q -30,-40 -50,-65 Q -65,-80 -75,-105" stroke="url(#goldTree)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M -25,-38 Q -40,-60 -45,-85" stroke="url(#goldTree)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Right Main Branches & Botanical Foliage -->
+    <path d="M 8,10 Q 35,-5 60,-15 Q 75,-25 85,-45" stroke="url(#goldTree)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M 30,-2 Q 50,-25 70,-35" stroke="url(#goldTree)" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M 10,-15 Q 30,-40 50,-65 Q 65,-80 75,-105" stroke="url(#goldTree)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 25,-38 Q 40,-60 45,-85" stroke="url(#goldTree)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Center Canopy Branches -->
+    <path d="M 0,-40 Q -15,-70 -20,-115 M 0,-40 Q 15,-70 20,-115 M 0,-40 L 0,-125" stroke="url(#goldTree)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Rich Botanical Leaves & Spice Pod Clusters -->
+    <!-- Left Leaves -->
+    <g fill="url(#goldTree)" opacity="0.95">
+      <ellipse cx="-85" cy="-45" rx="10" ry="5" transform="rotate(-30 -85 -45)"/>
+      <ellipse cx="-70" cy="-35" rx="9" ry="5" transform="rotate(-20 -70 -35)"/>
+      <ellipse cx="-60" cy="-15" rx="9" ry="5" transform="rotate(-10 -60 -15)"/>
+      <ellipse cx="-75" cy="-105" rx="11" ry="6" transform="rotate(-50 -75 -105)"/>
+      <ellipse cx="-50" cy="-65" rx="10" ry="5" transform="rotate(-40 -50 -65)"/>
+      <ellipse cx="-45" cy="-85" rx="10" ry="5" transform="rotate(-45 -45 -85)"/>
+      <ellipse cx="-20" cy="-115" rx="11" ry="6" transform="rotate(-70 -20 -115)"/>
+      <!-- Spice Berries (Peppercorns/Cardamom) -->
+      <circle cx="-95" cy="-55" r="4" fill="#C5A059"/>
+      <circle cx="-88" cy="-62" r="3.5" fill="#DFC17B"/>
+      <circle cx="-78" cy="-58" r="3" fill="#8C6826"/>
+      <circle cx="-62" cy="-80" r="4" fill="#C5A059"/>
+      <circle cx="-54" cy="-88" r="3.5" fill="#DFC17B"/>
+    </g>
+
+    <!-- Right Leaves -->
+    <g fill="url(#goldTree)" opacity="0.95">
+      <ellipse cx="85" cy="-45" rx="10" ry="5" transform="rotate(30 85 -45)"/>
+      <ellipse cx="70" cy="-35" rx="9" ry="5" transform="rotate(20 70 -35)"/>
+      <ellipse cx="60" cy="-15" rx="9" ry="5" transform="rotate(10 60 -15)"/>
+      <ellipse cx="75" cy="-105" rx="11" ry="6" transform="rotate(50 75 -105)"/>
+      <ellipse cx="50" cy="-65" rx="10" ry="5" transform="rotate(40 50 -65)"/>
+      <ellipse cx="45" cy="-85" rx="10" ry="5" transform="rotate(45 45 -85)"/>
+      <ellipse cx="20" cy="-115" rx="11" ry="6" transform="rotate(70 20 -115)"/>
+      <ellipse cx="0" cy="-128" rx="11" ry="6" transform="rotate(90 0 -128)"/>
+      <!-- Spice Berries -->
+      <circle cx="95" cy="-55" r="4" fill="#C5A059"/>
+      <circle cx="88" cy="-62" r="3.5" fill="#DFC17B"/>
+      <circle cx="78" cy="-58" r="3" fill="#8C6826"/>
+      <circle cx="62" cy="-80" r="4" fill="#C5A059"/>
+      <circle cx="54" cy="-88" r="3.5" fill="#DFC17B"/>
+    </g>
+
+    <!-- DYNAMIC EMERALD & GOLD GROWTH ARROW (Upward Trade & Export Vector) -->
+    <g id="growthArrowPath">
+      <path d="M -35,70 Q 0,25 35,-30 Q 55,-65 80,-115" stroke="url(#growthArrow)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <!-- Arrow Head pointing high to the future/global market -->
+      <polygon points="80,-115 62,-108 72,-96" fill="#10B981" />
+      <polygon points="80,-115 84,-96 72,-96" fill="#047857" />
+    </g>
+  </g>
+
+  <!-- BRAND TYPOGRAPHY: NAVANTARA EXIM -->
+  <g transform="translate(200, 355)">
+    <!-- Brand Title -->
+    <text x="0" y="0" font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="22" font-weight="900" fill="#0B192C" letter-spacing="2" text-anchor="middle">
+      NAVANTARA EXIM
+    </text>
+    <text x="126" y="-8" font-family="'Cinzel', 'Times New Roman', serif" font-size="9" font-weight="bold" fill="#C5A059">TM</text>
+    
+    <!-- Tagline -->
+    <text x="0" y="20" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5" font-weight="700" fill="#8C6826" letter-spacing="1.5" text-anchor="middle">
+      SEAMLESS TRADE. GLOBAL TRUST.
+    </text>
+
+    <!-- Divider Line with Diamond -->
+    <line x1="-90" y1="32" x2="-15" y2="32" stroke="#C5A059" stroke-width="1" opacity="0.6"/>
+    <polygon points="0,29 3,32 0,35 -3,32" fill="#C5A059"/>
+    <line x1="15" y1="32" x2="90" y2="32" stroke="#C5A059" stroke-width="1" opacity="0.6"/>
+
+    <!-- Bottom Origin Credentials -->
+    <text x="0" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8" font-weight="600" fill="#4B5563" letter-spacing="1.2" text-anchor="middle">
+      PUNE • MUMBAI • JNPT / MUNDRA DISPATCH
+    </text>
+    <text x="0" y="58" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="7.5" font-weight="700" fill="#1E40AF" letter-spacing="2" text-anchor="middle">
+      AUTHENTIC INDIAN EXPORT PARTNER
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navantara Exim - Indian Supplier & Export Partner | Seamless Trade. Global Trust.</title>
+    <meta name="description" content="Navantara Exim is an India-based supplier and export partner offering selected Indian products for international wholesale, distribution, and commercial trade. Seamless Trade. Global Trust." />
+    <meta property="og:title" content="Navantara Exim - Indian Supplier & Export Partner" />
+    <meta property="og:description" content="Source, verify, and export certified Indian products for global wholesale and commercial trade." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          window.__NAVANTARA_CACHE = {};
+          var req = indexedDB.open('NavantaraDB', 1);
+          req.onsuccess = function() {
+            var db = req.result;
+            if (db.objectStoreNames.contains('assets')) {
+              var tx = db.transaction('assets', 'readonly');
+              var store = tx.objectStore('assets');
+              var cursorReq = store.openCursor();
+              cursorReq.onsuccess = function(e) {
+                var cursor = e.target.result;
+                if (cursor) {
+                  window.__NAVANTARA_CACHE[cursor.key] = cursor.value;
+                  cursor.continue();
+                } else {
+                  window.dispatchEvent(new CustomEvent('navantara-assets-ready'));
+                }
+              };
+            }
+          };
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F9FAFB] text-[#1E293B] antialiased selection:bg-[#C5A059] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
