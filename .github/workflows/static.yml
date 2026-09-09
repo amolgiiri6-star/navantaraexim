@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -28,18 +27,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Install dependencies
         run: npm install
 
       - name: Build website
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: npm run build
+
+      # GitHub Pages does not provide server-side routing.
+      # Copy index.html as 404.html so React can handle
+      # direct visits to /products, /markets, /about, etc.
+      - name: Create SPA fallback
+        run: cp dist/index.html dist/404.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload website artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
