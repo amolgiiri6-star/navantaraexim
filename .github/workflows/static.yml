@@ -23,13 +23,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      - name: Create lock file and install
+      - name: Install and Build
         run: |
-          npm init -y
-          npm install --save react react-dom
+          npm install -g npm@latest
           npm install
-      - name: Build
-        run: npm run build
+          npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
