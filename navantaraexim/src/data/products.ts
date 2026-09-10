@@ -124,7 +124,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       "Artists' Brushes & Writing Brushes for Educational / Fine Arts (HS 96033010)",
       "Specialty Skincare & Detailing Applicator Brushes (HS 96033090)",
       "Pre-Moistened Herbal Cosmetic & Cleansing Wipes (HS 33079090)",
-      "Scent-Infused Herbal Wardrobe & Drawer Sheets (HS 33079090)"
+      
     ],
     services: [
       'HS 9603.30 OEM/ODM Private Label Brush Manufacturing & Assembly',
@@ -213,24 +213,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         applications: ['Clean Makeup Removal', 'Travel Skincare Packs', 'Post-Workout Cleansing', 'Eco-Luxury Hotel Amenities']
       },
       {
-        id: 'cs-sheet-1',
-        name: 'Scent-Infused Herbal Wardrobe & Drawer Sheets',
-        botanicalOrTechnicalName: 'Micro-Encapsulated Indian Vetiver (Khus) + Sandalwood + Sacred Basil Botanical Liners',
-        origin: 'Kannauj, Uttar Pradesh & Karnataka, India',
-        extractionOrMethod: 'Thermodynamic Botanical Infusion & Micro-Diffusion Coating',
-        grade: 'Eco-Luxury Home Cosmetic & Textile Care Grade',
-        purity: '100% Bio-Based Botanical Saturation, Free from Naphthalene or Synthetic Musks',
-        packaging: '6-Sheet Luxury Embossed Folio / 50-Sheet Master Retail Cartons',
-        leadTime: '10 - 15 Business Days',
-        hsCodeStatus: 'Confirmed',
-        hsnCode: '33079090',
-        hsnCategory: 'HSN 33079090 (Scent-Infused Cosmetic & Linen Preparation Sheets)',
-        moq: '2,500 Folios',
-        documentation: ['COA', 'IFRA 51st Amendment Certificate', 'VOC Free Testing Report', 'MSDS', 'FSC Paper Certification'],
-        description: 'Artisanal linen and wardrobe scent liners infused with pure Indian vetiver root and authentic Mysore sandalwood extracts. Designed for luxury dressing rooms, lingerie drawers, and heirloom cashmere storage. Naturally deters fabric pests and moth infestation while imparting an enduring, serene earthy-woody fragrance without toxic synthetic chemical fumigants.',
-        image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
-        applications: ['Luxury Linen Preservation', 'Wardrobe & Cashmere Storage', 'Boutique Hotel Turn-Down Amenities', 'Eco-Luxury Retail Gift Collections']
-      }
+        
     ]
   },
   {
@@ -248,7 +231,8 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
       'Translucent Loose Setting Finishing Powder',
       'Illuminating Body Dusting Powders',
       'Herbal Bath & Ubtan Body Care Powders',
-      'High-Purity Talc for Industrial & Personal Care'
+      'High-Purity Talc for Industrial & Personal Care',
+      'Scent-Infused Herbal Wardrobe & Drawer Sheets'
     ],
     services: [
       'Asbestos-Free Certified Lab Testing Verification',
@@ -305,7 +289,23 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         description: 'Micro-fine translucent setting powder that controls surface shine and locks makeup smoothly without caking.',
         image: 'https://images.unsplash.com/photo-1512290900672-1f4803d526e0?auto=format&fit=crop&w=800&q=80',
         applications: ['Cosmetic Setting', 'Oil Control', 'Daily Face Finishing']
-      }
+      },
+            {
+        id: 'cs-sheet-1',
+        name: 'Scent-Infused Herbal Wardrobe & Drawer Sheets',
+        botanicalOrTechnicalName: 'Indian Vetiver (Khus) + Sandalwood + Botanical Fragrance Blend',
+        origin: 'India',
+        extractionOrMethod: 'Botanical Infusion & Scent-Diffusion Coating',
+        grade: 'Botanical Home & Textile Care Grade',
+        purity: 'Botanical-Based Formulation — Specifications Available on Request',
+        packaging: 'Retail Sheets / Bulk Export Packaging — To Be Confirmed',
+        leadTime: 'To Be Confirmed',
+        hsCodeStatus: 'To Be Confirmed Product-by-Product',
+        documentation: ['COA — Available on Request', 'Product Specification Sheet — Available on Request'],
+        description: 'Botanical scent-infused sheets designed for wardrobes, drawers, linen storage and other textile-care applications. Developed using Indian botanical fragrance materials and suitable for wholesale, private-label and export sourcing enquiries, subject to product and supplier verification.',
+        image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
+        applications: ['Wardrobe & Drawer Care', 'Linen Storage', 'Textile Scenting', 'Home Fragrance']
+      },
     ]
   },
   {
