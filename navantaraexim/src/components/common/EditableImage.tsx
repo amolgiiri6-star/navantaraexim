@@ -37,6 +37,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_cs-sheet-1') return '/Drawer sheets.png';
     if (storageKey === 'prod_img_cs-wipe-1') return '/Herbal Wipes.png';
     if (storageKey === 'prod_img_cs-brush-96033090') return '/Brushes.png';
+    if (storageKey === 'prod_img_pow-2') return '/Cooling Talc.png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
