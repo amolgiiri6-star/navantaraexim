@@ -51,6 +51,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_attar-mitti-33019031') return '/Mitti Attar.png';
     if (storageKey === 'prod_img_attar-khus-33019031') return '/Khus Attar.png';
     if (storageKey === 'prod_img_attar-shamama-33019031') return '/Shamama Safforn Attar.png';
+    if (storageKey === 'prod_img_rosewater-gulabjal-33030020') return '/Rose Water.png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
