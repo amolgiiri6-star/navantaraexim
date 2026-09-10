@@ -59,6 +59,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_oil-palmarosa-33012933') return '/Palmarosa_Oil.jpg';
     if (storageKey === 'prod_img_oil-patchouli-33012934') return '/Patchouli_Oil.jpg';
     if (storageKey === 'prod_img_oil-davana-33012944') return '/_Davana_Oil_.jpg';
+    if (storageKey === 'prod_img_oil-sandalwood-33012937') return '/Mysore_Sandalwood_Oil.jpg';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
