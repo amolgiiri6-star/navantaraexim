@@ -65,6 +65,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_tob-24039910-khaini') return '/Chewing Tobacco - Filter Khaini.png';
     if (storageKey === 'prod_img_tob-24039920-prep') return '/Preparations Containing Chewing Tobacco.png';
     if (storageKey === 'prod_img_tob-24039930-jarda') return '/zarda_compressed.jpeg';
+    if (storageKey === 'prod_img_tob-24039940-snuff') return '/Preparations Containing Chewing Tobacco (2).png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
