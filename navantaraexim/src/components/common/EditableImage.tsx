@@ -54,6 +54,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_rosewater-gulabjal-33030020') return '/Rose Water.png';
     if (storageKey === 'prod_img_keora-water-33030030') return '/Kewra Water.png';
     if (storageKey === 'prod_img_aqueous-distillates-33019060') return '/floral_waters_and_botanical_hydrosol.jpg';
+    if (storageKey === 'prod_img_oil-rose-33012938') return '/Indian_Rose_Oil.jpg';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
