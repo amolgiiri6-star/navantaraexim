@@ -305,7 +305,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         description: 'Botanical scent-infused sheets designed for wardrobes, drawers, linen storage and other textile-care applications. Developed using Indian botanical fragrance materials and suitable for wholesale, private-label and export sourcing enquiries, subject to product and supplier verification.',
         image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80',
         applications: ['Wardrobe & Drawer Care', 'Linen Storage', 'Textile Scenting', 'Home Fragrance']
-      },
+      }
     ]
   },
   {
