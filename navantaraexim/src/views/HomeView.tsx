@@ -33,7 +33,7 @@ import { OfficialStampLogo } from '../components/brand/OfficialStampLogo';
 import { getImageFromIDB, getCachedImageSync } from '../utils/imageStorage';
 import { EditableImage } from '../components/common/EditableImage';
 
-const DEFAULT_HERO_BANNER = '/default-hero-banner.jpg';
+const DEFAULT_HERO_BANNER = '/Hero Banner.png';
 
 interface HomeViewProps {
   onNavigate: (route: PageRoute) => void;
@@ -45,7 +45,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenRFQ }) => 
   const [bannerBgImage, setBannerBgImage] = useState<string>(() => {
     const cached = getCachedImageSync('navantara_custom_banner_bg');
     if (cached) return cached;
-    return '/default-hero-banner.jpg';
+    return '/Hero Banner.png';
   });
 
   useEffect(() => {
