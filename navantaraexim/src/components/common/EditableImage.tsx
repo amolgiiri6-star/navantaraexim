@@ -43,6 +43,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_fab-twill-4th-60s') return '/Executive 4 Threads.png';
     if (storageKey === 'prod_img_fab-twill-3th-80s') return '/Royal 3 Threads.png';
     if (storageKey === 'prod_img_fab-twill-4th-yd-herringbone') return '/Yarn Dyed 4 threads.png';
+    if (storageKey === 'prod_img_fab-twill-4th-satin-100s') return '/Ultra Compact 4 threads.png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
