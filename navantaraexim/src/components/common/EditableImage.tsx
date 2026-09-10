@@ -30,6 +30,7 @@ export const EditableImage: React.FC<EditableImageProps> = ({
       if (storageKey === 'prod_img_eo-1') return '/Sandalwood oil.png';
 if (storageKey === 'prod_img_eo-2') return '/peppermint oil.png';
 if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
+   if (storageKey === 'prod_img_eo-4') return '/Palma Rosa.png'; 
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
