@@ -39,7 +39,6 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_cs-brush-96033090') return '/Brushes.png';
     if (storageKey === 'prod_img_pow-1') return '/Cooling Talc.png';
     if (storageKey === 'prod_img_pow-2') return '/Baby Powder.png';
-    if (storageKey === 'prod_img_pow-3') return '/Powder Main Image.png';
     if (storageKey === 'prod_img_pow-3') return '/translucent loose setting powder.jpg';
 return defaultSrc;
 });
