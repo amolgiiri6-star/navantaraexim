@@ -42,48 +42,11 @@ interface HomeViewProps {
 
 export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenRFQ }) => {
   // Directly load custom banner from synchronous cache if present, then permanent static asset, then fallback
-  const [bannerBgImage, setBannerBgImage] = useState<string>(() => {
-    const cached = getCachedImageSync('navantara_custom_banner_bg');
-    if (cached) return cached;
-    return '/Hero Banner.png';
-  });
+  const [bannerBgImage, setBannerBgImage] = useState<string>(DEFAULT_HERO_BANNER);
 
   useEffect(() => {
-    let isMounted = true;
-
-    // Retrieve saved custom banner from IndexedDB
-    getImageFromIDB('navantara_custom_banner_bg').then((idbImg) => {
-      if (idbImg && isMounted) {
-        setBannerBgImage(idbImg);
-        return;
-      }
-
-      // If no IDB image, test if /custom-hero-banner.png loads, otherwise use DEFAULT_HERO_BANNER
-      const img = new Image();
-      img.onload = () => {
-        if (isMounted) setBannerBgImage('/custom-hero-banner.png?t=' + Date.now());
-      };
-      img.onerror = () => {
-        if (isMounted) setBannerBgImage(DEFAULT_HERO_BANNER);
-      };
-      img.src = '/custom-hero-banner.png?t=' + Date.now();
-    });
-
-    const handleAssetsReady = () => {
-      const cached = getCachedImageSync('navantara_custom_banner_bg');
-      if (cached && isMounted) {
-        setBannerBgImage(cached);
-      }
-    };
-
-    window.addEventListener('navantara-assets-ready', handleAssetsReady);
-
-    return () => {
-      isMounted = false;
-      window.removeEventListener('navantara-assets-ready', handleAssetsReady);
-    };
-  }, []);
-
+  setBannerBgImage(DEFAULT_HERO_BANNER);
+}, []);
   const openWhatsApp = () => {
     const text = encodeURIComponent(
       "Hello Navantara Exim Trade Desk, I would like to enquire about Indian product supply and export requirements."
