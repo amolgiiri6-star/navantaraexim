@@ -27,9 +27,10 @@ export const EditableImage: React.FC<EditableImageProps> = ({
       const cached = getCachedImageSync(`img_${storageKey}`);
       if (cached) return cached;
     }
-    if (storageKey === 'prod_img_eo-1') return '/Sandalwood oil.png'; return defaultSrc;
+       if (storageKey === 'prod_img_eo-1') return '/Sandalwood oil.png';
+    if (storageKey === 'prod_img_eo-2') return '/peppermint oil.png';
+    return defaultSrc;
   });
-
   // Load custom image from IndexedDB on mount if available
   useEffect(() => {
     let isMounted = true;
