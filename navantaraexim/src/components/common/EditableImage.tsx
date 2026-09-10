@@ -62,6 +62,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_oil-sandalwood-33012937') return '/Mysore_Sandalwood_Oil.jpg';
     if (storageKey === 'prod_img_deo-rollon-sticks-33072000') return '/Botanical_Roll-Ons_Stick.jpg';
     if (storageKey === 'prod_img_deo-creams-solids-33072000') return '/Artisnal deodorants.jpg';
+    if (storageKey === 'prod_img_tob-24039910-khaini') return '/Chewing Tobacco - Filter Khaini.png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
