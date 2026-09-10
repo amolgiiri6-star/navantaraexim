@@ -3,9 +3,19 @@
 <head>
   <meta charset="utf-8">
   <script>
-    sessionStorage.redirect = location.href;
+    (function() {
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      sessionStorage.setItem(
+        'redirect',
+        path + search + hash
+      );
+
+      window.location.replace('/');
+    })();
   </script>
-  <meta http-equiv="refresh" content="0;URL='/'">
 </head>
 <body>
 </body>
