@@ -47,6 +47,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_fab-twill-3th-peach-40s') return '/Peach Finish 3 threads.png';
     if (storageKey === 'prod_img_fab-poplin-100s') return '/cotton poppolin.png';
     if (storageKey === 'prod_img_fab-oxford-50s') return '/Royal Oxford.png';
+    if (storageKey === 'prod_img_fab-linen-60lea') return '/linen 60.png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
