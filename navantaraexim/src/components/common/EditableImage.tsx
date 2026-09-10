@@ -32,7 +32,8 @@ if (storageKey === 'prod_img_eo-2') return '/peppermint oil.png';
 if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
    if (storageKey === 'prod_img_eo-4') return '/Palma Rosa.png';
  if (storageKey === 'prod_img_eo-5') return '/Clove oil.png';
-  if (storageKey === 'prod_img_cs-brush-96033020') return '/Cosmetic Brushes.png';  
+  if (storageKey === 'prod_img_cs-brush-96033020') return '/Cosmetic Brushes.png';
+    if (storageKey === 'prod_img_cs-brush-96033010') return '/Artistic Brushes.png';
 return defaultSrc;
 });
   // Load custom image from IndexedDB on mount if available
