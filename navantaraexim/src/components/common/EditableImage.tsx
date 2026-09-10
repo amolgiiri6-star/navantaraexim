@@ -63,7 +63,7 @@ if (storageKey === 'prod_img_eo-3') return '/ginger oil.png';
     if (storageKey === 'prod_img_deo-rollon-sticks-33072000') return '/Botanical_Roll-Ons_Stick.jpg';
     if (storageKey === 'prod_img_deo-creams-solids-33072000') return '/Artisnal deodorants.jpg';
     if (storageKey === 'prod_img_tob-24039910-khaini') return '/Chewing Tobacco - Filter Khaini.png';
-    if (storageKey === 'prod_img_tob-24039920-prep') return '/Preparations Containing Chewing Tobacco (2).png';
+    if (storageKey === 'prod_img_tob-24039920-prep') return '/Preparations Containing Chewing Tobacco.png';
     if (storageKey === 'prod_img_tob-24039930-jarda') return '/zarda_compressed.jpeg';
 return defaultSrc;
 });
