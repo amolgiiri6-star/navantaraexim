@@ -211,9 +211,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
         description: 'Ultra-soft, 100% plant-cellulose wipes pre-saturated with organic Indian aloe vera juice and steam-distilled vetiver (Khus) botanical water. Effortlessly lifts waterproof makeup, sunscreen, and urban pollutants while replenishing the skin barrier. Formulated with zero alcohol and zero phenoxyethanol to command top clean-beauty price premiums in European and North American retail channels.',
         image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80',
         applications: ['Clean Makeup Removal', 'Travel Skincare Packs', 'Post-Workout Cleansing', 'Eco-Luxury Hotel Amenities']
-      },
-      {
-        
+      }
     ]
   },
   {
