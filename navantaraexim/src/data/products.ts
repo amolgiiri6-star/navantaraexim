@@ -117,7 +117,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     title: 'Cosmetics',
     subtitle: 'Clean-Beauty Formulations (HS 33079090) & Precision Brushes (HS 9603.30)',
     assetReferenceName: 'Beauty & Brush Asset Reference',
-    heroImage: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/Cosmetic Main page Image.png',
     summary: 'Specializing in clean-beauty export formulations (HS 33079090) and precision applicator brushes (HS 9603.30)—including cruelty-free synthetic PBT cosmetic brushes, high-demand fine arts & writing brushes for educational sectors, and hygienic specialty applicators. Formulated with organic Indian raw materials and engineered with precision bristle craftsmanship commanding premium export margins across international retail, salon, and institutional markets.',
     productRange: [
       "Brushes for Application of Cosmetics (Cruelty-Free Synthetic PBT, HS 96033020)",
