@@ -312,7 +312,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     title: 'Shirting Fabrics',
     subtitle: 'HS 52083310: Dyed 3-Thread & 4-Thread Twill Cotton Shirting (≥ 85% Cotton, ≤ 200 g/m²)',
     assetReferenceName: 'Fabrics Asset Reference',
-    heroImage: 'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/fabrics_compressed.jpeg',
     summary: 'India is a premier global weaving origin for fine cotton shirting fabrics, with prime export specialization under tariff code HS 52083310: Woven fabrics of cotton, containing ≥ 85% cotton by weight, weighing not more than 200 g/m² - Dyed: 3-thread or 4-thread twill shirting. Produced on high-speed air-jet and rapier electronic dobby looms across Ahmedabad, Coimbatore, Surat, and Ichalkaranji, our shirting range features combed compact yarns (40s to 100/2s), continuous vat/reactive dyeing, liquid ammonia silky finishes, strict dimensional stability (< 2% shrinkage), and OEKO-TEX Standard 100 compliance for international garment makers and brands.',
     productRange: [
       'HS 52083310: Dyed 4-Thread Twill Cotton Shirting (60s, 80/2s, 100/2s • 135–160 g/m²)',
