@@ -305,7 +305,7 @@ export const CategoryDetailView: React.FC<CategoryDetailViewProps> = ({
             <div className="lg:col-span-5">
               <div className="rounded-2xl overflow-hidden border border-[#C5A059]/40 shadow-2xl bg-[#0B192C] relative site-img-box-hero">
                 <EditableImage
-                  storageKey={`cat_img_${activeCategory.id}`}
+                  storageKey={`cat_img_${activeCategory.id}_v2`}
                   defaultSrc={activeCategory.heroImage}
                   alt={`${activeCategory.title} export from India`}
                   className="w-full h-full object-cover"
