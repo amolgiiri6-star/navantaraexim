@@ -540,7 +540,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     title: 'Perfumes, Attars & Artisanal Fragrances',
     subtitle: 'HSN-Classified Indian Perfumery, Hydro-Distillates, Essential Oils & Deodorants',
     assetReferenceName: 'Perfumes & Attars Asset Reference',
-    heroImage: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/Perfumes2_compressed.jpeg',
     summary: 'India is the historic cradle of natural perfumery and essential oil distillation. Navantara Exim structures compliant global exports for the most demanded categories classified under precise 8-digit Indian HSN codes: traditional Attars distilled into fixed carrier oils (HSN 33019031), high-volume hydro-distilled Rose Water (HSN 33030020), coastal Keora Water (HSN 33030030), aqueous floral hydrosols (HSN 33019060), key export essential oils under sub-chapter 3301 (Rose, Lemongrass, Palmarosa, Patchouli, Davana, and Sandalwood), and clean non-aerosol roll-ons, sticks & deodorant creams (HSN 33072000). Every batch is verified through GC-MS profiling, IFRA compliance dossiers, and UN-certified export packaging.',
     productRange: [
       'Attars in Fixed Oil Base (HSN 33019031: Pure Mitti Attar, Ruh Khus & Shamama in Fixed Carrier Oil)',
