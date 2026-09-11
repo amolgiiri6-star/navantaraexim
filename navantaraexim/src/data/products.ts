@@ -220,7 +220,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     title: 'Personal Care',
     subtitle: 'Cosmetic Powders & Everyday Care Products',
     assetReferenceName: 'Powders Asset Reference',
-    heroImage: 'https://images.unsplash.com/photo-1512290900672-1f4803d526e0?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/Powder Main Image.png',
     summary: 'Cosmetic talc, cornstarch-based baby powders, cooling skin powders, and personal care essentials manufactured in India for international distribution, wholesale, and institutional buyers.',
     productRange: [
       'Perfumed Talcum Powder (Floral & Oriental fragrance blends)',
