@@ -7,7 +7,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     title: 'Essential Oils',
     subtitle: 'Selected Indian Essential Oils & Natural Extracts',
     assetReferenceName: 'Bio1 Asset Reference',
-    heroImage: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/essential oils02_compressed.jpeg',
     summary: 'Selected Indian essential oils for international wholesale, distribution, formulation, and commercial requirements. Steam-distilled from hand-selected botanicals across India for authentic aroma profile and chemical purity.',
     productRange: [
       'Lavender Essential Oil (Lavandula angustifolia)',
