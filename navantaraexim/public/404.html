@@ -2,16 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <title>Navantara Exim</title>
   <script>
     (function() {
       var path = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
 
-      sessionStorage.setItem(
-        'redirect',
-        path + search + hash
-      );
+      var redirect = path + search + hash;
+
+      sessionStorage.setItem('redirect', redirect);
 
       window.location.replace('/');
     })();
