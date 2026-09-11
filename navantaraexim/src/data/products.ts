@@ -830,7 +830,7 @@ export const PRODUCT_CATEGORIES: ProductCategory[] = [
     title: 'Speciality Goods',
     subtitle: 'Chapter 24 Specialty Tobacco & Nicotiana Preparations (HS 2403.99)',
     assetReferenceName: 'Speciality Goods Asset Reference',
-    heroImage: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=1200&q=80',
+    heroImage: '/Preparations Containing Chewing Tobacco (2).png',
     summary: 'Export-grade Indian manufactured tobacco and specialty preparations under Chapter 24 (Customs Tariff Heading HS 2403.99). Sourced from registered primary processing facilities across Gujarat, Andhra Pradesh, and Uttar Pradesh with full Tobacco Board of India RCMC compliance, DPPQS Phytosanitary certification, CORESTA testing, and destination-customized hermetic packaging.',
     productRange: [
       'HS 24039910: Chewing Tobacco & Filter Khaini (Micro-Porous Portions & Loose Flakes)',
