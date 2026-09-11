@@ -3,7 +3,6 @@ import { PageRoute } from './types';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { RFQModal } from './components/modals/RFQModal';
-import { LivePublishSyncBar } from './components/common/LivePublishSyncBar';
 
 // Views
 import { HomeView } from './views/HomeView';
@@ -209,8 +208,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-[#0B192C] text-white antialiased selection:bg-[#C5A059] selection:text-[#0B192C]">
       {/* Live Publishing & Preview Synchronization Bar */}
-      <LivePublishSyncBar />
-
+      
       {/* Global Navbar */}
       <Navbar 
         currentRoute={currentRoute} 
