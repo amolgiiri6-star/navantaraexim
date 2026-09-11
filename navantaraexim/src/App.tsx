@@ -33,7 +33,7 @@ export default function App() {
       '/products/textiles',
       '/products/perfumes-attars',
       '/products/botanical-products',
-      '/products/speciality-goods',
+      '/products/speciality-products',
       // Legacy slugs for seamless backwards compatibility
       '/products/cosmetics-skincare',
       '/products/powders-personal-care',
