@@ -12,6 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      (function() {
+        try {
+          var redirect = sessionStorage.getItem('redirect');
+          if (redirect) {
+            sessionStorage.removeItem('redirect');
+            if (window.location.pathname === '/' && redirect !== '/') {
+              window.history.replaceState(null, '', redirect);
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
+
     <script>
       (function() {
         try {
@@ -43,4 +58,3 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
