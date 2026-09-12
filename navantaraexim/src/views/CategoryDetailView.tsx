@@ -308,7 +308,7 @@ export const CategoryDetailView: React.FC<CategoryDetailViewProps> = ({
                   storageKey={`cat_img_${activeCategory.id}_v2`}
                   defaultSrc={activeCategory.heroImage}
                   alt={`${activeCategory.title} export from India`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   containerClassName="w-full h-full"
                   badgeLabel="Change Category Photo"
                 />
