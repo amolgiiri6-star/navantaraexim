@@ -715,7 +715,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenRFQ }) => 
                   storageKey="home_logistics_operations"
                   defaultSrc="/default-hero-banner.jpg" 
                   alt="Export Port Logistics" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   containerClassName="w-full h-full"
                   badgeLabel="Change Logistics Image"
                 />
