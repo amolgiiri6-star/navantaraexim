@@ -713,7 +713,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenRFQ }) => 
               <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl site-img-box-hero">
                 <EditableImage 
                   storageKey="home_logistics_operations"
-                  defaultSrc="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80" 
+                  defaultSrc="/default-hero-banner.jpg" 
                   alt="Export Port Logistics" 
                   className="w-full h-full object-cover"
                   containerClassName="w-full h-full"
