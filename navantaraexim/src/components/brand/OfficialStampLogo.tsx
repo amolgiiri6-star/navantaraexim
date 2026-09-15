@@ -28,7 +28,7 @@ export const OfficialStampLogo: React.FC<OfficialStampLogoProps> = ({
       style={{ width: `${dim.width}px`, height: `${dim.height}px` }}
     >
       <img
-        src="/Navantara logo.png.png"
+        src="/navantara-logo.png.png"
         alt="Navantara Exim - Seamless Trade. Global Trust."
         width={dim.width}
         height={dim.height}
