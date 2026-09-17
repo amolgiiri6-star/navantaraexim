@@ -209,7 +209,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenRFQ }) => 
 
           {/* 6 Category Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PRODUCT_CATEGORIES.map((cat) => (
+            {PRODUCT_CATEGORIES   .filter((cat) => cat.id === 'essential-oils' || cat.id === 'textiles')   .map((cat) => (
               <div 
                 key={cat.id}
                 className="group rounded-2xl bg-[#0B192C] border border-white/10 hover:border-[#C5A059]/60 overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 shadow-lg"
