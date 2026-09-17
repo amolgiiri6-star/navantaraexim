@@ -14,7 +14,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import { PageRoute } from '../types';
-import { PRODUCT_CATEGORIES } from '../data/products';
+import { PRODUCT_CATEGORIES as ALL_PRODUCT_CATEGORIES } from '../data/products';
 import { EditableImage } from '../components/common/EditableImage';
 import { ProductsHeroBackground } from '../components/products/ProductsHeroBackground';
 
@@ -24,6 +24,10 @@ interface ProductsHubViewProps {
 }
 
 export const ProductsHubView: React.FC<ProductsHubViewProps> = ({ onNavigate, onOpenRFQ }) => {
+  const PRODUCT_CATEGORIES = ALL_PRODUCT_CATEGORIES.filter(
+    (cat) => cat.id === 'essential-oils' || cat.id === 'textiles'
+  );
+
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
@@ -94,7 +98,7 @@ export const ProductsHubView: React.FC<ProductsHubViewProps> = ({ onNavigate, on
                     onChange={(e) => setSelectedCategory(e.target.value)}
                     className="px-4 py-3 bg-[#081321]/95 border border-white/25 focus:border-[#C5A059] rounded-xl text-white text-sm outline-none cursor-pointer shadow-inner"
                   >
-                    <option value="all">All 6 Categories</option>
+                    <option value="all">All {PRODUCT_CATEGORIES.length} Categories</option>
                     {PRODUCT_CATEGORIES.map(c => (
                       <option key={c.id} value={c.slug}>{c.title}</option>
                     ))}
