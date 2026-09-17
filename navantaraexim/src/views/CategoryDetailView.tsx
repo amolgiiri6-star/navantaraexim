@@ -50,7 +50,7 @@ export const CategoryDetailView: React.FC<CategoryDetailViewProps> = ({
   onOpenRFQ 
 }) => {
   // Resolve category safely from prop or slug
-  const activeCategory = propCategory || (categorySlug ? findCategoryBySlug(categorySlug) : undefined) || PRODUCT_CATEGORIES[0];
+  const resolvedCategory = propCategory || (categorySlug ? findCategoryBySlug(categorySlug) : undefined);  const activeCategory = resolvedCategory &&   (resolvedCategory.id === 'essential-oils' || resolvedCategory.id === 'textiles')     ? resolvedCategory     : PRODUCT_CATEGORIES.find(         (cat) => cat.id === 'essential-oils'       ) || PRODUCT_CATEGORIES[0];
 
   const isTextiles = activeCategory.id === 'textiles';
   const isPerfumes = activeCategory.id === 'perfumes-attars';
