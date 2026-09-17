@@ -23,6 +23,9 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpenRFQ }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const visibleProductCategories = PRODUCT_CATEGORIES.filter(
+    (cat) => cat.id === 'essential-oils' || cat.id === 'textiles'
+  );  
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [marketsDropdownOpen, setMarketsDropdownOpen] = useState(false);
@@ -214,7 +217,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
                       <span className="text-[10px] text-white/50">{PRODUCT_CATEGORIES.length} Categories</span>
                     </div>
                     <div className="py-1">
-                      {PRODUCT_CATEGORIES.map((cat) => (
+                      {visibleProductCategories.map((cat) => (
                         <button
                           key={cat.id}
                           type="button"
@@ -492,7 +495,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
               <span className="text-xs text-[#C5A059]">6 Categories</span>
             </button>
             <div className="pl-6 space-y-1 text-xs font-normal normal-case text-white/70">
-              {PRODUCT_CATEGORIES.map((cat) => (
+              {visibleProductCategories.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => handleNavClick(`/products/${cat.slug}` as PageRoute)}
