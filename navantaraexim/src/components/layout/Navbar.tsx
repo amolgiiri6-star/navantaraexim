@@ -475,13 +475,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#081321] border-b border-white/10 px-4 pt-3 pb-6 space-y-4 animate-in slide-in-from-top duration-200">
-          {/* Mobile Drawer Brand Header */}
-          <div 
-            onClick={() => handleNavClick('/')}
-            className="pb-3 border-b border-white/10 flex items-center gap-3 cursor-pointer"
-          >
-            <NavantaraLogo variant="compact" />
-          </div>
+         {/* Mobile Drawer Brand Header removed — logo is already in the main mobile header */}
 
           <div className="space-y-1 text-sm font-semibold uppercase tracking-wider">
             <button
