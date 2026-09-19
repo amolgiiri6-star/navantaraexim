@@ -120,7 +120,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenRFQ }) => {
               Product Portfolio
             </p>
             <ul className="space-y-2 text-xs">
-              {PRODUCT_CATEGORIES.map((cat) => (
+              {PRODUCT_CATEGORIES.filter(
+  (cat) => cat.id === 'essential-oils' || cat.id === 'textiles'
+).map((cat) => (
                 <li key={cat.id}>
                   <button
                     onClick={() => {
