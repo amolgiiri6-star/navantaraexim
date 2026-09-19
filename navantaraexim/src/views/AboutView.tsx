@@ -121,7 +121,7 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate, onOpenRFQ }) =
               <span className="text-2xl font-serif font-black text-[#C5A059]">01. SOURCE</span>
               <h3 className="font-serif text-lg font-bold text-white">India-Based Supply</h3>
               <p className="text-xs text-white/70 leading-relaxed">
-                Direct engagement with verified Indian agricultural producers, certified botanical distillers, cosmetic makers, and textile mills.
+                India-side sourcing and export coordination for essential oils, natural distillates, shirting fabrics, and textiles, managed according to buyer specifications and applicable product requirements.
               </p>
             </div>
 
