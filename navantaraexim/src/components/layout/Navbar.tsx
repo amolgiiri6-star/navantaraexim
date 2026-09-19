@@ -492,7 +492,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
               className="block w-full text-left py-2 px-3 rounded-lg hover:bg-white/5 text-white flex items-center justify-between"
             >
               <span>Products</span>
-              <span className="text-xs text-[#C5A059]">6 Categories</span>
+              <span className="text-xs text-[#C5A059]">2 Categories</span>
             </button>
             <div className="pl-6 space-y-1 text-xs font-normal normal-case text-white/70">
               {visibleProductCategories.map((cat) => (
