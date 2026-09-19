@@ -173,11 +173,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenRFQ }) => 
 
             <div className="lg:col-span-7 space-y-4 text-white/80 text-sm sm:text-base leading-relaxed">
               <p>
-                India is one of the world's most versatile production hubs for essential oils, artisanal perfumes & attars, natural deodorants, cosmetics, fine textiles, personal care powders, and specialized regional goods. However, navigating regional suppliers, batch quality testing, export packaging, and international shipping protocols can be complex.
-              </p>
-              <p>
-                <strong>Navantara Exim</strong> operates on the ground in India to bridge this gap. We coordinate directly with regional manufacturing facilities, verify suppliers and product specifications, facilitate laboratory documentation, and manage export logistics so that international buyers receive reliable, compliant product supply on schedule.
-              </p>
+  India is a major sourcing base for essential oils, natural distillates, shirting fabrics, and textiles. For international buyers, managing product specifications, supplier coordination, documentation, export packaging, and shipment requirements can require dedicated India-side coordination.
+</p>
+<p>
+  <strong>Navantara Exim</strong> provides India-side sourcing and export coordination according to buyer specifications and applicable product requirements. We support supplier coordination, product and documentation review, samples, export preparation, packaging requirements, and shipment coordination for international commercial buyers.
+</p>
             </div>
           </div>
         </div>
