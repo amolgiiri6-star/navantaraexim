@@ -77,7 +77,7 @@ export const ProductsHubView: React.FC<ProductsHubViewProps> = ({ onNavigate, on
                 </p>
 
                 <p className="text-sm text-slate-100/90 leading-relaxed font-normal">
-                  Explore our core product categories sourced from qualified Indian manufacturing and agricultural supply partners. We manage product coordination, batch quality documentation, export packaging, and shipment coordination for international buyers.
+                  Explore our core product categories sourced through Indian manufacturing and supply relationships. We manage product coordination, product and documentation review, export packaging, and shipment coordination for international buyers.
                 </p>
 
                 {/* Search & Category Filter Controls */}
