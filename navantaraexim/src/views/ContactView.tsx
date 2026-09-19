@@ -353,7 +353,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onNavigate, onOpenRFQ 
                     <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                       <div className="flex items-center gap-2 text-white/50 text-[11px]">
                         <ShieldCheck className="w-4 h-4 text-[#C5A059] shrink-0" />
-                        <span>Direct response from verified export desk in India</span>
+                        <span>Direct response from our export desk in India</span>
                       </div>
                       <button
                         type="submit"
