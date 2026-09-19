@@ -159,14 +159,18 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onNavigate, onOpen
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div 
-            onClick={() => handleNavClick('/')} 
-            className="cursor-pointer select-none shrink-0"
-          >
-            <NavantaraLogo variant="horizontal" />
-          </div>
-
+       {/* Logo */}
+<div
+  onClick={() => handleNavClick('/')}
+  className="cursor-pointer select-none shrink-0"
+>
+  <div className="lg:hidden">
+    <NavantaraLogo variant="compact" />
+  </div>
+  <div className="hidden lg:block">
+    <NavantaraLogo variant="horizontal" />
+  </div>
+</div>
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-3.5 xl:gap-6 2xl:gap-8 text-xs font-bold uppercase tracking-wider xl:tracking-widest text-white/80 shrink-0">
             {/* 1. HOME */}
