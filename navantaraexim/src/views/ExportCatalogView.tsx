@@ -48,7 +48,7 @@ export const ExportCatalogView: React.FC<ExportCatalogViewProps> = ({ onNavigate
               <span className="gold-gradient-text">NAVANTARA EXIM EXPORT DOSSIER</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-              Access comprehensive technical specifications, MOQ tiers, chemical assays, and packaging options across our complete range of Essential Oils, Cosmetics, Powders, Perfumes & Attars, Deodorants, Fabrics, and Specialty Goods.
+              Access comprehensive technical specifications, MOQ tiers, product documentation, and packaging options across our current range of Essential Oils and Shirting Fabrics & Textiles.
             </p>
           </div>
         </div>
@@ -69,7 +69,7 @@ export const ExportCatalogView: React.FC<ExportCatalogViewProps> = ({ onNavigate
               <ul className="space-y-3 text-xs sm:text-sm text-slate-700">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#C5A059] shrink-0 mt-0.5" />
-                  <span><strong>Full 7-Category Product Index:</strong> Botanical names, extraction methods, purity standards, and HS Codes.</span>
+                  <span><strong>Current Product Index:</strong> Product specifications, purity standards, commercial details, and applicable HS Codes.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#C5A059] shrink-0 mt-0.5" />
@@ -120,7 +120,7 @@ export const ExportCatalogView: React.FC<ExportCatalogViewProps> = ({ onNavigate
                     Request Instant PDF Download
                   </h3>
                   <p className="text-xs text-slate-600">
-                    Enter your business email to receive the full 48-page export catalog.
+                    Enter your business email to request the current Navantara Exim export catalog.
                   </p>
 
                   <div>
