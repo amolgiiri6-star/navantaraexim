@@ -324,11 +324,7 @@ export const ContactView: React.FC<ContactViewProps> = ({ onNavigate, onOpenRFQ 
                         >
                           <option value="" className="bg-[#0B192C]">Select Area of Interest</option>
                           <option value="Essential Oils" className="bg-[#0B192C]">Essential Oils</option>
-                          <option value="Cosmetics" className="bg-[#0B192C]">Cosmetics</option>
-                          <option value="Personal Care" className="bg-[#0B192C]">Personal Care</option>
                           <option value="Textiles" className="bg-[#0B192C]">Textiles</option>
-                          <option value="Perfumes, Attars & Artisanal Fragrances" className="bg-[#0B192C]">Perfumes, Attars & Artisanal Fragrances</option>
-                          <option value="Speciality Goods" className="bg-[#0B192C]">Speciality Goods</option>
                           <option value="Export Services" className="bg-[#0B192C]">Export Services</option>
                           <option value="Supplier Verification" className="bg-[#0B192C]">Supplier Verification</option>
                           <option value="Other" className="bg-[#0B192C]">Other Inquiry</option>
